@@ -3,6 +3,7 @@ import {
     View,
     StyleSheet
 } from 'react-native'
+import {colors} from '../theme'
 
 const Container = ({children}) => (
     <View style={styles.container}>
@@ -13,8 +14,8 @@ const Container = ({children}) => (
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1
+        flex: 1,
+        backgroundColor:colors.primary
     }
 })
 
